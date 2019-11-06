@@ -35,12 +35,6 @@ const reducer = (state = initialState, action) => {
     if(type === "ADDCIRCLE"){
         return [...state, { radius: Math.floor(Math.random() * 80),
             color: `${getRandomColor()}`} ]
-        // return{
-            // radius: Math.floor(Math.random() * 80),
-            // color: `${getRandomColor()}`
-        // }
-
-        console.log([...state, "hi"]);
     }
 
     return state;
